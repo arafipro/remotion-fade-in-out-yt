@@ -1,8 +1,18 @@
-import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
+import {
+  AbsoluteFill,
+  interpolate,
+  useCurrentFrame,
+  useVideoConfig,
+} from "remotion";
 
 export const MyComposition = () => {
   const frame = useCurrentFrame();
-  const opacity = interpolate(frame, [0, 20], [0, 1]);
+  const { durationInFrames } = useVideoConfig();
+  const opacity = interpolate(
+    frame,
+    [0, 20, durationInFrames - 20, durationInFrames],
+    [0, 1, 1, 0]
+  );
 
   return (
     <AbsoluteFill
