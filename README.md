@@ -9,3 +9,5 @@ https://www.remotion.dev/
 https://zenn.dev/arafipro/articles/2023-12-16-remotion-fade-in-out-yt
 
 ## YouTube
+
+https://youtu.be/86h8TOOJbkA
